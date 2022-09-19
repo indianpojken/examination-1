@@ -56,7 +56,7 @@ h2 {
 }
 
 .bg--white {
-    background-color: #EBEBEB;
+    background-color: #fff;
 }
 
 .bg--child {
@@ -91,7 +91,7 @@ h2 {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 68px;
+    grid-auto-rows: minmax(68px, auto);
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -318,6 +318,47 @@ button:hover {
 .steps {
     display: grid;
     grid-template-columns: inherit;
-    grid-column: auto;
-    grid-row: span 1 / auto;
+    grid-auto-rows: inherit;
+    grid-column: 1 / -1;
+}
+
+.steps__box {
+    display: flex;
+    grid-column: auto / span 2;
+    grid-row: auto / span 5;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box__number {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__number h1 {
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 900;
+    font-size: 35px;
+    color: #00000066;
+}
+
+.box__text {
+    justify-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 257px;
+    height: 113px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.box__text p {
+    color: #000000B2;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
 }
