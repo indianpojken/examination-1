@@ -121,11 +121,15 @@ h2 {
     color: #00000080;
 }
 
-.bg--blue p, .bg--gray p {
+.bg--blue p,
+.bg--gray p {
     color: #00000099;
 }
 
-.bg--gray h1, .bg--gray h2 {
+.bg--yellow h1,
+.bg--yellow h2,
+.bg--gray h1,
+.bg--gray h2 {
     color: #fff;
 }
 
@@ -191,13 +195,13 @@ button {
 
 .main__section {
     grid-column: 1 / -1;
-    grid-row: auto / span 9;
 }
 
 .main__upper {
     display: flex;
     justify-content: space-evenly;
     padding-top: 103px;
+    grid-row: 1 / span 9;
 }
 
 .main__upper--left {
@@ -212,7 +216,34 @@ button {
     line-height: 24px;
 }
 
+.main__lower {
+    display: flex;
+    justify-content: center;
+    padding-top: 230px;
+    grid-column: 1 / -1;
+    grid-row: 10 / span 9;
+    text-align: center;
+}
+
+.main__lower section p {
+    margin-top: 50px;
+    width: 442px;
+    line-height: 20px;
+}
+
 .main__cards {
-    grid-row: 7 / 7;
+    grid-column: 1 / -1;
+    grid-row: 7 / span 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 90px;
+}
+
+.main__card {
     background-color: #fff;
+    width: 256px;
+    height: 308px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
