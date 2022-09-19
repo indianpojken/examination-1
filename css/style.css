@@ -96,7 +96,7 @@ h2 {
     margin: 0 auto;
 }
 
-.wrapper header {
+.header__frontpage {
     display: grid;
     grid-template-columns: inherit;
     grid-row: auto / span 8;
@@ -324,21 +324,13 @@ button:hover {
 
 .steps__box {
     display: flex;
+    flex-direction: column;
     grid-column: auto / span 2;
     grid-row: auto / span 5;
-    flex-direction: column;
-    text-align: center;
+    padding: 40px;
 }
 
 .box__number {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box__number h1 {
     font-family: 'Frank Ruhl Libre';
     font-weight: 900;
     font-size: 35px;
@@ -346,8 +338,8 @@ button:hover {
 }
 
 .box__text {
-    margin: auto auto;
-    width: 257px;
+    margin: auto;
+    text-align: center;
 }
 
 .box__text p {
@@ -355,4 +347,30 @@ button:hover {
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
+    /* add height of number to even-out the bottom */
+    padding-bottom: 2rem;
+}
+
+.go-to-top {
+    grid-column: auto / span 6;
+    grid-row: auto / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.go-to-top a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.wrapper>footer {
+    grid-column: auto / span 6;
+    grid-row: auto / span 5;
+    background-color: #777574;
 }
