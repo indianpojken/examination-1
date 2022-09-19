@@ -51,12 +51,31 @@ h2 {
     background-color: #A9A19E
 }
 
+.bg--light-gray {
+    background-color: #EBEBEB;
+}
+
+.bg--white {
+    background-color: #EBEBEB;
+}
+
+.bg--child {
+    background-image: url("../assets/child.png");
+}
+
+.bg--adult {
+    background-image: url("../assets/adult.png");
+}
+
+.bg--old {
+    padding-top: 25px !important;
+    background-image: url("../assets/old.png");
+    background-size: 55% !important;
+    ;
+}
+
 .bg--family {
     background-image: url("../assets/family.png");
-    background-repeat: no-repeat;
-    background-size: 286px 270px;
-    background-position: bottom right;
-    background-origin: content-box;
 }
 
 .font--small {
@@ -92,6 +111,10 @@ h2 {
     grid-row: auto / span 8;
     grid-column: auto / span 3;
     padding: 71px 17px 0 105px;
+    background-repeat: no-repeat;
+    background-size: 286px 270px;
+    background-position: bottom right;
+    background-origin: content-box;
 }
 
 .header__box--big h1 {
@@ -151,6 +174,12 @@ button {
     text-transform: uppercase;
 }
 
+button:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all ease .1s;
+}
+
 .wrapper nav {
     display: flex;
     grid-column: 2 / span 4;
@@ -179,6 +208,7 @@ button {
 
 .navigation__item:hover {
     color: #000000;
+    transition: all ease .1s;
 }
 
 .navigation__item--current-page {
@@ -187,10 +217,9 @@ button {
 
 .wrapper main {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: inherit;
     grid-auto-rows: inherit;
     grid-column: 1 / -1;
-    grid-row: auto;
 }
 
 .main__section {
@@ -241,9 +270,54 @@ button {
 }
 
 .main__card {
+    display: flex;
+    justify-content: center;
+    position: relative;
     background-color: #fff;
     width: 256px;
-    height: 308px;
+    min-height: 308px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+.main__card header {
+    border-radius: 4px;
+    position: absolute;
+    top: -26px;
+    width: 236px;
+    min-height: 150px;
+    padding-top: 15px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-origin: content-box;
+}
+
+.main__card section {
+    margin-top: 120px;
+    text-align: center;
+    color: #00000066;
+}
+
+.main__card h1 {
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    color: #000000E5;
+}
+
+.main__card p {
+    color: #00000066;
+    line-height: 18px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-column: auto;
+    grid-row: span 1 / auto;
 }
