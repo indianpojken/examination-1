@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Frank+Ruhl+Libre:wght@700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.bg--red {
+    background-color: #F17949;
+}
+
+.bg--blue {
+    color: #000;
+    background-color: #C7DDEA;
+}
+
+.bg--yellow {
+    background-color: #FFB939;
+}
+
+.bg--family {
+    background-image: url("../assets/family.png");
+    background-repeat: no-repeat;
+    background-size: 286px 270px;
+    background-position: bottom right;
+    background-origin: content-box;
+}
+
+.font-small {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.font-medium {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 68px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper header {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-row: auto / span 8;
+    grid-column: 1 / -1;
+}
+
+.header__box {
+    padding: 0;
+}
+
+.header__box--big {
+    grid-row: auto / span 8;
+    grid-column: auto / span 3;
+    padding: 71px 17px 0 105px;
+}
+
+.header__box--big h1 {
+    line-height: 100%;
+}
+
+.header__box--big p {
+    line-height: 24px;
+    margin: 10px 112px 58px 0;
+}
+
+.header__box--small {
+    grid-row: auto / span 4;
+    grid-column: auto / span 3;
+    color: #fff;
+}
+
+.header__box--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bg--red p, .bg--yellow p {
+    color: #00000080;
+}
+
+.bg--blue p {
+    color: #00000099;
+}
+
+.header__box mark {
+    color: #fff;
+    background-color: inherit;
+}
+
+button {
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    min-width: 130px;
+    min-height: 40px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.wrapper nav {
+    grid-column: 2 / span 4;
+    background-color: aquamarine;
+}
