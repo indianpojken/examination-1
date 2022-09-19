@@ -9,10 +9,12 @@ body {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
+    background-color: #E5E5E5;
     margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 900;
     margin: 0;
@@ -108,7 +110,8 @@ h2 {
     flex-direction: column;
 }
 
-.bg--red p, .bg--yellow p {
+.bg--red p,
+.bg--yellow p {
     color: #00000080;
 }
 
@@ -134,6 +137,40 @@ button {
 }
 
 .wrapper nav {
+    display: flex;
     grid-column: 2 / span 4;
-    background-color: aquamarine;
+}
+
+.navigation {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: auto / span 1;
+}
+
+.navigation__item {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .4);
+    text-decoration: none;
+}
+
+.navigation__item:hover {
+    color: #000000;
+}
+
+.navigation__item--current-page {
+    color: #000;
+}
+
+.wrapper main {
+    grid-column: 1 / -1;
+    background-color: coral;
 }
