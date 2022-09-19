@@ -71,11 +71,14 @@ h2 {
     padding-top: 25px !important;
     background-image: url("../assets/old.png");
     background-size: 55% !important;
-    ;
 }
 
 .bg--family {
     background-image: url("../assets/family.png");
+}
+
+.bg--man-and-child {
+    background-image: url("../assets/man-and-child.png");
 }
 
 .font--small {
@@ -181,12 +184,13 @@ button:hover {
 }
 
 .wrapper nav {
-    display: flex;
-    grid-column: 2 / span 4;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-column: 1 / span 6;
 }
 
 .navigation {
-    flex: 1;
+    grid-column: 2 / span 4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style-type: none;
@@ -215,7 +219,7 @@ button:hover {
     color: #000;
 }
 
-.wrapper main {
+.main__frontpage {
     display: grid;
     grid-template-columns: inherit;
     grid-auto-rows: inherit;
@@ -373,4 +377,23 @@ button:hover {
     grid-column: auto / span 6;
     grid-row: auto / span 5;
     background-color: #777574;
+}
+
+/* --- contact --- */
+.header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: inherit;
+    grid-column: 1 / -1;
+    grid-row: auto / span 5;
+    padding: 0 115px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-origin: content-box;
+}
+
+.main__contact {
+    grid-column: 1 / -1;
+    grid-row: auto / span 8;
 }
