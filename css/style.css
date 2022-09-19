@@ -250,7 +250,7 @@ button:hover {
     justify-content: center;
     padding-top: 230px;
     grid-column: 1 / -1;
-    grid-row: 10 / span 9;
+    grid-row: 10 / span 10;
     text-align: center;
 }
 
@@ -334,7 +334,6 @@ button:hover {
     width: 100px;
     height: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -347,13 +346,8 @@ button:hover {
 }
 
 .box__text {
-    justify-self: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto auto;
     width: 257px;
-    height: 113px;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 .box__text p {
