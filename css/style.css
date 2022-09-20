@@ -448,6 +448,10 @@ button:hover {
     margin-bottom: 25px;
 }
 
+.contact__form textarea {
+    resize: none;
+}
+
 .contact__form input[type=submit] {
     margin-top: 32px;
     align-self: flex-end;
