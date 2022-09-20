@@ -467,11 +467,12 @@ button:hover {
     text-transform: uppercase;
 }
 
-button:hover {
+.contact__form input[type=submit]:hover {
     color: #fff;
     background-color: #000;
     transition: all ease .1s;
 }
+
 .hero__contact {
     background-image: url("../assets/map-contact.png");
     display: flex;
@@ -482,27 +483,20 @@ button:hover {
     position: relative;
 }
 
-.adress {
+.hero__adress {
     width: 323px;
     height: 206px;
-    background-color: #FAB131; 
-    padding: 15px;
+    padding: 22px;
     margin: 45px 156px 156px 86px;
 }
-.adress h1 {
-    color: #FFF;
-    font-weight: 900;
-    letter-spacing: -0.02em;
-}
 
-.adress p {
-    padding: 2px;
-    font-weight: 500;
+.hero__adress address p {
+    font-style: normal;
     color: rgba(255, 255, 255, 0.8);
     line-height: 24px;
-    font-size: 16px;
 }
-.map__needle {
+
+.hero__needle {
     background-image: url("../assets/needle.png");
     background-repeat: no-repeat;
     width: 70px;
