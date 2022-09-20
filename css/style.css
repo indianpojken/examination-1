@@ -472,3 +472,40 @@ button:hover {
     background-color: #000;
     transition: all ease .1s;
 }
+.hero__contact {
+    background-image: url("../assets/map-contact.png");
+    display: flex;
+    grid-template-columns: inherit;
+    grid-column: 1 / -1;
+    grid-row: auto / span 6;
+    background-origin: content-box;
+    position: relative;
+}
+
+.adress {
+    width: 323px;
+    height: 206px;
+    background-color: #FAB131; 
+    padding: 15px;
+    margin: 45px 156px 156px 86px;
+}
+.adress h1 {
+    color: #FFF;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+.adress p {
+    padding: 2px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 24px;
+    font-size: 16px;
+}
+.map__needle {
+    background-image: url("../assets/needle.png");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 112px;
+    margin: 160px 135px 100px -90px;
+}
