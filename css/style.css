@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Frank+Ruhl+Libre:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Frank+Ruhl+Libre:wght@700;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -208,6 +208,7 @@ button:hover {
     font-size: 12px;
     color: rgba(0, 0, 0, .4);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .navigation__item:hover {
@@ -400,6 +401,70 @@ button:hover {
 }
 
 .main__contact {
+    display: grid;
+    grid-template-columns: inherit;
     grid-column: 1 / -1;
     grid-row: auto / span 8;
+
+    grid-template-areas:
+        "header header header form form .";
+}
+
+.contact__title {
+    padding-top: 106px;
+    padding-left: 78px;
+    grid-area: header;
+}
+
+.contact__form {
+    padding-top: 106px;
+    grid-area: form;
+}
+
+.contact__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form label {
+    color: #fff;
+    font-weight: 700;
+    margin: 6px 0;
+    opacity: 0.7;
+}
+
+.contact__form input[type=text], textarea {
+    background: #FEFEFE;
+    border-radius: 2px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 18px;
+}
+
+.contact__form input[type=text] {
+    margin-bottom: 25px;
+}
+
+.contact__form input[type=submit] {
+    margin-top: 32px;
+    align-self: flex-end;
+    flex: 0;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    min-width: 130px;
+    min-height: 40px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all ease .1s;
 }
